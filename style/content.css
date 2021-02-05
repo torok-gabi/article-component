@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+}
+.container .content-img {
+  max-width: 100%;
+}
+.container .content {
+  width: 80%;
+  height: auto;
+  font-size: 1.3rem;
+}
+.container .content h1 {
+  font-family: "Manrope", sans-serif;
+  color: #48556a;
+  margin: 2rem 0;
+}
+.container .content p {
+  font-family: "Manrope", sans-serif;
+  color: #6d7f97;
+  margin: 2rem 0;
+}
+.container .user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+.container .user .user-img {
+  width: 5rem;
+  border-radius: 50%;
+}
+.container .user .text {
+  width: 50%;
+  font-size: 1.3rem;
+  color: #6d7f97;
+  padding-left: 3rem;
+}
+.container .user .icon {
+  width: 2rem;
+  height: 2rem;
+}

@@ -1,0 +1,43 @@
+    @import "variable";
+    .footer {
+        display: none;
+        width: 100%;
+        height: auto;
+        background-color: $main-title;
+        padding: 2rem;
+        border-radius: 0 0 2rem 2rem;
+        margin-top: -8rem;
+        .footer-left {
+            width: 65%;
+            display: flex;
+            justify-content: flex-start;
+            p {
+                font-size: 1.5rem;
+                font-family: $font;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                color: $footerHover;
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
+            .facebook-icon,
+            .pinterest-icon,
+            .twitter-icon {
+                margin: 0 1rem;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        .share-content {
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            .share-icon {
+                width: 2rem;
+                height: 2rem;
+                background-color: $footerHover;
+                color: whitesmoke;
+                border-radius: 50%;
+            }
+        }
+    }

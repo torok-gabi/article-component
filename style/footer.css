@@ -1,0 +1,42 @@
+.footer {
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: #48556a;
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  margin-top: -8rem;
+}
+.footer .footer-left {
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .footer-left p {
+  font-size: 1.5rem;
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #ecf2f8;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.footer .footer-left .facebook-icon,
+.footer .footer-left .pinterest-icon,
+.footer .footer-left .twitter-icon {
+  margin: 0 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.footer .share-content {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .share-content .share-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ecf2f8;
+  color: whitesmoke;
+  border-radius: 50%;
+}
