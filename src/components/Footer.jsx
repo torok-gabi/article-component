@@ -5,7 +5,7 @@ import pinterest from "../images/icon-pinterest.svg";
 import share from "../images/icon-share.svg";
 import "./footer.scss";
 
-const Footer = () => {
+const Footer = ({close}) => {
     return (
         <div className="footer">
             <div className="footer-left">         
@@ -13,9 +13,9 @@ const Footer = () => {
                 <img className="facebook-icon" src={facebook} alt="facebook-icon"/>
                 <img src={twitter} className="twitter-icon" alt="twitter-icon"/>
                 <img src={pinterest} className="pinterest-icon" alt="pinterest-icon"/>
-            </div>
-            <div className="share-content">
-                <img className="share-icon" src={share} alt="share-icon"/>
+                <div className="share-content">
+                    <img onClick={close} className="share-icon" src={share} alt="share-icon"/>
+                </div>
             </div>
         </div>
     )

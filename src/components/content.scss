@@ -3,25 +3,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    justify-content: center;
+    width: 90vw;
     height: auto;
-    margin: 0 auto;
+    box-shadow: 5px 5px 5px 5px grey;
+    padding: 0 1rem;
+    border-radius: 2rem;
     .content-img {
-        max-width: 100%;
+        width: 90vw;
+        border-radius: 2rem 2rem 0 0;
     }
     .content {
-        width: 80%;
+        width: 100%;
         height: auto;
         font-size: 1.3rem;
+        margin-bottom: 1rem;
         h1 {
             font-family: $font;
             color: $main-title;
             margin: 2rem 0;
+            padding: 0 2rem;
         }
         p {
             font-family: $font;
             color: $subtitle;
-            margin: 2rem 0;
+            padding: 0 2rem;
         }
     }
     .user {
@@ -29,21 +35,106 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin-bottom: 2rem;
-        padding: 0 2rem;
+        margin: 2rem 0;
+        padding: 0 1rem;
         .user-img {
             width: 5rem;
             border-radius: 50%;
         }
         .text {
-            width: 50%;
+            width: 100%;
             font-size: 1.3rem;
             color: $subtitle;
             padding-left: 3rem;
+            p {
+                width: 100%;
+                font-weight: bold;
+                padding: 0;
+            }
         }
-        .icon {
-            width: 2rem;
-            height: 2rem;
+        .share-content {
+            display: flex;
+            justify-content: flex-end;
+            .icon {
+                width: 2rem;
+                height: 2rem;
+                padding: .3rem;
+                color: white;
+                background-color: $main-title;
+                border-radius: 50%;
+            }
         }
+    }
+}
+
+.footer {
+    display: none;
+    width: 90vw;
+    height: 8vh;
+    background-color: $main-title;
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    margin-top: -8rem;
+}
+
+@media only screen and (min-width: 900px) {
+    .container {
+        width: 80vw;
+        .content-img {
+            width: 80vw;
+        }
+    }
+    .footer {
+        width: 80vw;
+        height: 10vh;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        flex-direction: row;
+        width: 90vw;
+        min-height: 40vh;
+        .bg-img {
+            width: 70%;
+            height: 100%;
+            background-image: url(../images/drawers.jpg);
+            background-size: cover;
+            background-position: left bottom;
+            border-radius: 2rem 0 0 2rem;
+        }
+        .content-img {
+            display: none;
+        }
+        .content {
+            flex-direction: row;
+            width: 100%;
+            h1 {
+                width: 100%;
+            }
+            .user {
+                width: 100%;
+                margin-top: 4rem;
+                position: relative;
+                .text {
+                    width: 100%;
+                    text-align: center;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        width: 21vw;
+        height: 3vh;
+        border-radius: 2rem;
+        margin-top: 13rem;
+        position: absolute;
+        top: 40%;
+        right: 10rem;
+        align-items: center;
+        justify-content: space-between;
     }
 }
