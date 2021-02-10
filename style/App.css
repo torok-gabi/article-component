@@ -18,6 +18,19 @@ html,
   font-size: 13px;
 }
 
+.attribution {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 @media only screen and (min-width: 900px) {
   body,
 html,
